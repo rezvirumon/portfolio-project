@@ -8,8 +8,7 @@
   <!-- Tailwind & DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  
   <!-- Style Sheet Link -->
   <link rel="stylesheet" href="styles/style.css">
 
@@ -43,21 +42,27 @@
     }
   </script>
 
-
+<style>
+  .inter{
+    font-family: "Inter", sans-serif;
+  }
+</style>
 
 
 </head>
 
-<body>
+<body class="inter">
   
 
-  <div id="scroll-hide-nav" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50 scroll-hide-down">
+
+  <!-- Nav Area -->
+  <div id="scroll-hide-nav" class=" bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50 scroll-hide-down">
     <!-- ... existing navbar code ... -->
     <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50">
       <div class="container mx-auto flex items-center justify-between p-4">
   
           <!-- Logo or brand name -->
-          <a href="#" class="text-lg font-semibold">Developer'<span class="font-extrabold ">S</span></a>
+          <a href="#" class="text-xl font-semibold ">Developer'<span class="font-extrabold ">S</span></a>
   
           <!-- Mobile menu button and close button -->
           <div id="mobile-menu-buttons" class="lg:hidden">
@@ -108,13 +113,40 @@
 
 
 
+  <!-- Hero Banner -->
+  <section>
+    <div class="hero min-h-screen bg-gradient-to-r from-purple-500 to-pink-500 text-white ">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="img/about2.jpg.png" class="max-w-60 lg:max-w-sm rounded-3xl shadow-2xl" data-aos="fade-left" />
+        <div data-aos="fade-right">
+          <p class="py-2 lg:py-4 text-sm lg:text-2xl font-bold">Hi, my name is</p>
+          <h1 class="text-xl lg:text-5xl font-bold ">Rezvi Ahmed <span class="">Rumon</span></h1>
+          <p class="py-5 lg:py-6 text-sm lg:text-lg">As a network engineer and frontend web developer, I possess a unique skill set that combines the intricate understanding of network architecture with the creative finesse of web development.
+           <br> <a href="#" class="text-sm text-blue-800">Rerad More</a>
+          </p>
+          <button class="btn bg-gradient-to-t from-purple-500 to-purple-800 text-white border-0 shadow-2xl">Hire Me</button>
+          <button class="btn mx-2 text-gradient-to-t from-purple-500 to-pink-500 shadow-2xl">Download</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
+ 
 
 
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+ 
   <script src="js/script.js"></script>
+  <!-- aos animation script link-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+    });
+  </script>
 </body>
 
 </html>
