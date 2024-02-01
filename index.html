@@ -2,58 +2,119 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer's.com</title>
-    <!-- Tailwind & DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-    <!-- Style Sheet Link -->
-    <link rel="stylesheet" href="styles/style.css">
-    
-    <!-- Google Fonts Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Kanit&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer's.com</title>
+  <!-- Tailwind & DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <!-- Style Sheet Link -->
+  <link rel="stylesheet" href="styles/style.css">
 
-    <!-- Box Icon Link -->
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Google Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Kanit&family=Poppins&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
 
-    <!-- Remix Icon Link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Box Icon Link -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!-- aos animation link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Remix Icon Link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- aos animation link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
-    <!-- Custom Color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                bgtheme: '#da373d',
-              }
-            }
+  <!-- Custom Color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgtheme: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
 
 
 
 </head>
-<body class="">
-    
+
+<body>
   
-    
+
+  <div id="scroll-hide-nav" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50 scroll-hide-down">
+    <!-- ... existing navbar code ... -->
+    <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+  
+          <!-- Logo or brand name -->
+          <a href="#" class="text-lg font-semibold">Developer'<span class="font-extrabold ">S</span></a>
+  
+          <!-- Mobile menu button and close button -->
+          <div id="mobile-menu-buttons" class="lg:hidden">
+              <button id="mobile-menu-button" class="focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+              </button>
+              <button id="mobile-menu-close" class="hidden focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+              </button>
+          </div>
+  
+          <!-- Desktop menu -->
+          <nav class="hidden lg:flex space-x-4">
+              <a href="#home" class="hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
+              <a href="#about" class="hover:text-blue-700 transition duration-300 ease-in-out">About</a>
+              <a href="#portfolio" class="hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
+              <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
+              <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
+          </nav>
+      </div>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-opacity-75 hidden">
+      <div class="flex items-center justify-end p-4">
+          <!-- Close button -->
+          <button id="mobile-menu-close" class="focus:outline-none text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+          </button>
+      </div>
+  
+      <div class="flex flex-col items-center mt-20 space-y-4">
+          <a href="#home" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
+          <a href="#about" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">About</a>
+          <a href="#portfolio" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
+          <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
+          <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
+      </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
 
 
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
