@@ -8,14 +8,15 @@
   <!-- Tailwind & DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Style Sheet Link -->
   <link rel="stylesheet" href="styles/style.css">
 
   <!-- Google Fonts Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Kanit&family=Poppins&family=Roboto:wght@500&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Kanit&family=Poppins&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
 
   <!-- Box Icon Link -->
@@ -42,90 +43,112 @@
     }
   </script>
 
-<style>
-  .inter{
-    font-family: "Inter", sans-serif;
-  }
-</style>
+  <style>
+    .inter {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
 
 
 </head>
 
 <body class="inter">
-  
+
 
 
   <!-- Nav Area -->
-  <div id="scroll-hide-nav" class=" bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50 scroll-hide-down">
+  <div id="scroll-hide-nav"
+    class=" bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50 scroll-hide-down">
     <!-- ... existing navbar code ... -->
     <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full z-50">
       <div class="container mx-auto flex items-center justify-between p-4">
-  
-          <!-- Logo or brand name -->
-          <a href="#" class="text-xl font-semibold ">Developer'<span class="font-extrabold ">S</span></a>
-  
-          <!-- Mobile menu button and close button -->
-          <div id="mobile-menu-buttons" class="lg:hidden">
-              <button id="mobile-menu-button" class="focus:outline-none">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-              </button>
-              <button id="mobile-menu-close" class="hidden focus:outline-none">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-              </button>
-          </div>
-  
-          <!-- Desktop menu -->
-          <nav class="hidden lg:flex space-x-4">
-              <a href="#home" class="hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
-              <a href="#about" class="hover:text-blue-700 transition duration-300 ease-in-out">About</a>
-              <a href="#portfolio" class="hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
-              <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
-              <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
-          </nav>
-      </div>
-  </div>
-  
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-opacity-75 hidden">
-      <div class="flex items-center justify-end p-4">
-          <!-- Close button -->
-          <button id="mobile-menu-close" class="focus:outline-none text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+
+        <!-- Logo or brand name -->
+        <a href="#" class="text-xl font-semibold ">Developer'<span class="font-extrabold ">S</span></a>
+
+        <!-- Mobile menu button and close button -->
+        <div id="mobile-menu-buttons" class="lg:hidden">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
           </button>
+          <button id="mobile-menu-close" class="hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop menu -->
+        <nav class="hidden lg:flex space-x-4">
+          <a href="#home" class="hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
+          <a href="#about" class="hover:text-blue-700 transition duration-300 ease-in-out">About</a>
+          <a href="#portfolio" class="hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
+          <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
+          <a href="#contact" class="hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
+        </nav>
       </div>
-  
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu"
+      class="lg:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-opacity-75 hidden">
+      <div class="flex items-center justify-end p-4">
+        <!-- Close button -->
+        <button id="mobile-menu-close" class="focus:outline-none text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
       <div class="flex flex-col items-center mt-20 space-y-4">
-          <a href="#home" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
-          <a href="#about" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">About</a>
-          <a href="#portfolio" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
-          <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
-          <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
+        <a href="#home" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Home</a>
+        <a href="#about" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">About</a>
+        <a href="#portfolio" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Portfolio</a>
+        <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Contact</a>
+        <a href="#contact" class="text-white hover:text-blue-700 transition duration-300 ease-in-out">Gellary</a>
       </div>
+    </div>
+
   </div>
-  
-</div>
 
 
 
   <!-- Hero Banner -->
   <section>
     <div class="hero min-h-screen bg-gradient-to-r from-purple-500 to-pink-500 text-white ">
-      <div class="hero-content flex-col lg:flex-row-reverse">
+      <div class="hero-content flex-col lg:flex-row-reverse ">
         <img src="img/about2.jpg.png" class="max-w-60 lg:max-w-sm rounded-3xl shadow-2xl" data-aos="fade-left" />
         <div data-aos="fade-right">
           <p class="py-2 lg:py-4 text-sm lg:text-2xl font-bold">Hi, my name is</p>
-          <h1 class="text-xl lg:text-5xl font-bold ">Rezvi Ahmed <span class="">Rumon</span></h1>
-          <p class="py-5 lg:py-6 text-sm lg:text-lg">As a network engineer and frontend web developer, I possess a unique skill set that combines the intricate understanding of network architecture with the creative finesse of web development.
-           <br> <a href="#" class="text-sm text-blue-800">Rerad More</a>
+          <h1 class="text-2xl lg:text-5xl font-bold ">Rezvi Ahmed <span class="typed"></span></h1>
+          <h2  class="my-1 lg:my-3 text-xl">I am a  <span class="typed2"> </span></h2>
+
+          <p class="py-3 lg:py-3 text-sm lg:text-lg">As a network engineer and frontend web developer, I possess a
+            unique skill set that combines the intricate understanding of network architecture with the creative finesse
+            of web development.
+            <br> <a href="#" class="text-sm text-blue-800">Rerad More</a>
           </p>
-          <button class="btn bg-gradient-to-t from-purple-500 to-purple-800 text-white border-0 shadow-2xl">Hire Me</button>
-          <button class="btn mx-2 text-gradient-to-t from-purple-500 to-pink-500 shadow-2xl">Download</button>
+
+          <div class="social text-xl my-2">
+            <a href="https://www.facebook.com/rumku.rezvi"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/rezvi_rumon/"><i class="ri-instagram-fill"></i></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=%2B8801823685472&data=ARB2w0VCZMD1gZZfwNb4q5HK0KgU1ffRCsAwZ251808417JYrJeYLRWAGwFreIkTKjs7j4DEdkTavM11OAiqnBF1gADlvW8ZC4xee2x1I0AaSmHxE458eYCwFpLnQSuGQdWViR9YvFEgIcUgTNzs4AWZ2w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3uPTRK7kxcPjnLAyZQinyuCgYUCkFlW8U0twdd8NLbB2aLgiYg1nSrcWw"><i
+                class="ri-whatsapp-fill"></i></a>
+            <a href="https://github.com/rezvirumon"><i class="ri-github-fill"></i></a>
+
+          </div>
+
+          <div class="space-x-5">
+            <button class="btn glass btn-secondary ">HIRE ME</button>
+            <button class="btn glass btn-secondary ">MY RESUME</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -133,12 +156,15 @@
 
 
 
- 
 
 
 
- 
+
+
   <script src="js/script.js"></script>
+  <!-- Typed JS -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
   <!-- aos animation script link-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -146,6 +172,21 @@
       offset: 300,
       duration: 1400,
     });
+
+    // typed js
+    var typed = new Typed(".typed", {
+      strings: ["Rumon"],
+      typeSpeed: 70,
+      backSpeed: 65,
+      loop: true
+    })
+    var typed = new Typed(".typed2", {
+      strings:["Network Engineer", "And", "Web Developer"],
+            typeSpeed: 80,
+            backSpeed: 65,
+            loop:true
+          })
+    
   </script>
 </body>
 
